@@ -16,10 +16,65 @@ const Navagation = () => {
       -webkit-text-fill-color: transparent;
     `,
   };
+  const buttonVariants = {
+    initial: {
+      backgroundColor: "#ffffff",
+    },
+    animate: {
+      backgroundColor: "#516585",
+    },
+  };
+  const firstSpanVariants = {
+    initial: {
+      rotate: 0,
+      marginBottom: 0,
+    },
+    animate: {
+      rotate: 45,
+      marginBottom: -8,
+    },
+  };
+  const secoundSpanVariants = {
+    initial: {
+      opacity: 1,
+    },
+    animate: {
+      opacity: 0,
+    },
+  };
+  const thirdSpanVariants = {
+    initial: {
+      rotate: 0,
+      marginTop: 0,
+    },
+    animate: {
+      rotate: -45,
+      marginTop: -8,
+    },
+  };
   return (
     <div>
-      <div className="flex justify-center items-center w-screen h-12">
-        <Link className="flex relative w-40 justify-center " to="/">
+      <div className="flex justify-between items-center w-screen h-12">
+        <motion.button
+          className="w-6 h-6 ml-3 flex flex-col justify-center items-center gap-1"
+          animate={isHidden ? "animate" : "initial"}
+          variants={buttonVariants}
+          onClick={() => setIsHidden(!isHidden)}
+        >
+          <motion.span
+            className="bg-slate-800 block rounded-full w-6 h-1"
+            variants={firstSpanVariants}
+          ></motion.span>
+          <motion.span
+            className="bg-slate-800 block rounded-full w-6 h-1"
+            variants={secoundSpanVariants}
+          ></motion.span>
+          <motion.span
+            className="bg-slate-800 block rounded-full w-6 h-1"
+            variants={thirdSpanVariants}
+          ></motion.span>
+        </motion.button>
+        <Link className="flex relative w-40 justify-center self-center " to="/">
           <Feather
             icon="hexagon"
             css={styles.featherIcons}
@@ -32,29 +87,19 @@ const Navagation = () => {
             className="absolute top-2  right-1"
           />
         </Link>
+        <div className="w-6 mr-3"></div>
       </div>
-      {isHidden ? (
-        <button onClick={() => setIsHidden(false)}>
-          <Feather icon="x" />
-        </button>
-      ) : (
-        <button onClick={() => setIsHidden(true)}>
-          <Feather icon="menu" />
-        </button>
-      )}
-      {isHidden && (
-        <motion.div
-          className="flex flex-col"
-          typeof="spring"
-          initial={{ opacity: 0, left: -80 }}
-          animate={{ opacity: 1, left: 0 }}
-          exit={{ opacity: 0, left: -80 }}
-        >
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact mig</Link>
-        </motion.div>
-      )}
+
+      <motion.div
+        className="flex flex-col bg-slate-700 w-1/3 text-white"
+        typeof="spring"
+        initial={{ opacity: 0, left: -80 }}
+        animate={isHidden ? { opacity: 1, left: 0 } : { opacity: 0, left: -80 }}
+      >
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/contact">Contact mig</Link>
+      </motion.div>
     </div>
   );
 };
