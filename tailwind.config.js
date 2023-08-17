@@ -2,7 +2,15 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: {
+          100: "#F1F1F1",
+          200: "#474747",
+          300: "#71806B",
+        },
+      },
+    },
   },
   plugins: [
     function ({ addVariant }) {

@@ -1,7 +1,9 @@
+import Layout from "./templates/Layout";
+
 function App() {
   return (
-    <div className="App">
-      <div></div>
+    <div>
+      <Layout />
     </div>
   );
 }
