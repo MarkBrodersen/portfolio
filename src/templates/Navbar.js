@@ -3,10 +3,10 @@ import NavRefs from "../components/NavRefs";
 export default function Navbar() {
   return (
     <ul className="child:mx-4 child:text-xl flex">
-      <NavRefs text="Home" ref="" />
-      <NavRefs text="About Me" ref="" />
-      <NavRefs text="Cases" ref="" />
-      <NavRefs text="Contact Me" ref="" />
+      <NavRefs text="Home" probref="" />
+      <NavRefs text="About Me" probref="" />
+      <NavRefs text="Cases" probref="" />
+      <NavRefs text="Contact Me" probref="" />
     </ul>
   );
 }
