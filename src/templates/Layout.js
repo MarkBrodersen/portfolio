@@ -6,16 +6,12 @@ import AboutMe from "./AboutMe";
 export default function Layout() {
   return (
     <>
-      <header className="w-full h-16 bg-primary-100 flex justify-center items-center">
-        <Navbar />
-      </header>
-      <main className="">
+      <Navbar />
+      <main>
         <Hero />
         <AboutMe />
       </main>
-      <footer>
-        <Contact />
-      </footer>
+      <Contact />
     </>
   );
 }

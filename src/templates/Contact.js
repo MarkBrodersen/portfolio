@@ -5,7 +5,7 @@ import FillerText from "../components/sub-components/FillerText";
 export default function Contact() {
   return (
     <>
-      <div className="bg-primary-100 ">
+      <footer className="bg-primary-100 ">
         <div className="flex w-[80%] m-auto">
           <article className="w-1/2">
             <div className="p-4">
@@ -19,7 +19,7 @@ export default function Contact() {
           </article>
           <ContactForm />
         </div>
-      </div>
+      </footer>
       <div className="bg-primary-300 w-full h-12"></div>
     </>
   );
