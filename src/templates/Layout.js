@@ -1,9 +1,9 @@
-import { useState } from "react";
 import Navbar from "./Navbar";
 import Contact from "./Contact";
 import Hero from "./Hero";
 import AboutMe from "./AboutMe";
 import Services from "./Services";
+import Cases from "./Cases";
 export default function Layout() {
   return (
     <>
@@ -12,6 +12,7 @@ export default function Layout() {
         <Hero />
         <AboutMe />
         <Services />
+        <Cases />
       </main>
       <Contact />
     </>
