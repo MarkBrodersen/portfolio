@@ -3,7 +3,7 @@ import DropImage from "../assets/images/BackDropImage2.jpg";
 
 export default function AboutMe() {
   return (
-    <div className="bg-primary-100">
+    <div id="aboutme" className="bg-primary-100">
       <div className="w-[80%] m-auto py-12 flex flex-col md:flex-row justify-center items-center">
         <BackDropImage
           image={DropImage}

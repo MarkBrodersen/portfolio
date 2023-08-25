@@ -7,12 +7,12 @@ import Cases from "./Cases";
 export default function Layout() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <main>
         <Hero />
         <AboutMe />
         <Services />
-        <Cases />
+        {/* <Cases /> */}
       </main>
       <Contact />
     </>

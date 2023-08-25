@@ -10,7 +10,10 @@ export default function Services() {
     setData(serviceData.data);
   }, []);
   return (
-    <div className="py-12 w-[80%] m-auto flex flex-col text-center">
+    <div
+      id="services"
+      className="py-12 w-[80%] m-auto flex flex-col text-center"
+    >
       <SectionHeading text="What can i do?" heading="Services" />
       <div className="flex flex-wrap justify-center gap-12">
         {data &&

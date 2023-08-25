@@ -10,7 +10,7 @@ export default function Cases() {
     setData(casesData.data);
   }, []);
   return (
-    <div className="pb-12 w-[80%] m-auto flex flex-col text-center">
+    <div id="cases" className="pb-12 w-[80%] m-auto flex flex-col text-center">
       <SectionHeading text="My Case Studies" heading="Cases" />
       <div>
         {data &&

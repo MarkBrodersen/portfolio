@@ -1,9 +1,13 @@
-export default function NavRefs({ text, ref }) {
+import { gsap } from "gsap";
+import { HashLink } from "react-router-hash-link";
+
+export default function NavRefs({ text, shref }) {
+  // const href = "/" + shref;
+  // console.log(href);
+
   return (
-    <li className="">
-      <button className="hover:text-primary-300 hover:underline transition-colors duration-150">
-        {text}
-      </button>
+    <li>
+      <HashLink to={shref}>Home</HashLink>
     </li>
   );
 }

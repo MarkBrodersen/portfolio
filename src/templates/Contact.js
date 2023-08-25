@@ -32,7 +32,7 @@ export default function Contact() {
 
   return (
     <>
-      <footer className="bg-primary-100 pt-12">
+      <footer id="contactme" className="bg-primary-100 pt-12">
         <div className="flex flex-col items-center sm:flex-row w-[80%] m-auto">
           <article className="w-1/2">
             <div className="p-4 sm:w-64">
