@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.b130c87e.css",
+    "main.js": "/portfolio/static/js/main.8a03f79e.js",
+    "static/media/BackDropImage2.jpg": "/portfolio/static/media/BackDropImage2.43ef2d648a4dcfe5769d.jpg",
+    "static/media/LandrupDans.png": "/portfolio/static/media/LandrupDans.6b4d9dcc67a762e9d2a6.png",
+    "static/media/mottojpg.jpg": "/portfolio/static/media/mottojpg.8ffff1f247d6def79960.jpg",
+    "static/media/Node.png": "/portfolio/static/media/Node.12abf3c428ba93d607bf.png",
+    "static/media/React.png": "/portfolio/static/media/React.c1279cd6ca0db2eb84a0.png",
+    "static/media/tailwindcss.jpg": "/portfolio/static/media/tailwindcss.138288185b284c2d2145.jpg",
+    "static/media/JavaScript.png": "/portfolio/static/media/JavaScript.3dfb665e058d08c99f28.png",
+    "index.html": "/portfolio/index.html",
+    "main.b130c87e.css.map": "/portfolio/static/css/main.b130c87e.css.map",
+    "main.8a03f79e.js.map": "/portfolio/static/js/main.8a03f79e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b130c87e.css",
+    "static/js/main.8a03f79e.js"
+  ]
+}
