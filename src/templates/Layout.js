@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Contact from "./Contact";
 import Hero from "./Hero";
 import AboutMe from "./AboutMe";
+import Services from "./Services";
 export default function Layout() {
   return (
     <>
@@ -10,6 +11,7 @@ export default function Layout() {
       <main>
         <Hero />
         <AboutMe />
+        <Services />
       </main>
       <Contact />
     </>

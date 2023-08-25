@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "image": "",
+      "heading": "React",
+      "text": "Making React applications"
+    },
+    {
+      "id": 2,
+      "image": "",
+      "heading": "JavaScript",
+      "text": "Use of functions and methods to make websites come alive and make them more accesseble"
+    },
+    {
+      "id": 3,
+      "image": "",
+      "heading": "TailwindCss",
+      "text": "Use to style websites with a linier design but still gives flexabilty for creativ webdesigns"
+    },
+    {
+      "id": 4,
+      "image": "",
+      "heading": "Node.Js",
+      "text": ""
+    }
+  ]
+}
