@@ -5,7 +5,7 @@ import FillerText from "../components/sub-components/FillerText";
 export default function Contact() {
   return (
     <>
-      <footer className="bg-primary-100 ">
+      <footer className="bg-primary-100 pt-12">
         <div className="flex w-[80%] m-auto">
           <article className="w-1/2">
             <div className="p-4">
