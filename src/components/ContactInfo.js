@@ -10,7 +10,7 @@ export default function ContactInfo({ icon, info }) {
       ) : icon === "info" ? (
         <div></div>
       ) : null}
-      <span>{info}</span>
+      <span className="mx-2">{info}</span>
     </div>
   );
 }
