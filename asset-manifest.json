@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.a58fa56f.css",
-    "main.js": "/portfolio/static/js/main.82688158.js",
+    "main.js": "/portfolio/static/js/main.a2332c2a.js",
     "static/media/BackDropImage2.jpg": "/portfolio/static/media/BackDropImage2.43ef2d648a4dcfe5769d.jpg",
     "static/media/LandrupDans.png": "/portfolio/static/media/LandrupDans.6b4d9dcc67a762e9d2a6.png",
     "static/media/mottojpg.jpg": "/portfolio/static/media/mottojpg.8ffff1f247d6def79960.jpg",
@@ -11,10 +11,10 @@
     "static/media/JavaScript.png": "/portfolio/static/media/JavaScript.3dfb665e058d08c99f28.png",
     "index.html": "/portfolio/index.html",
     "main.a58fa56f.css.map": "/portfolio/static/css/main.a58fa56f.css.map",
-    "main.82688158.js.map": "/portfolio/static/js/main.82688158.js.map"
+    "main.a2332c2a.js.map": "/portfolio/static/js/main.a2332c2a.js.map"
   },
   "entrypoints": [
     "static/css/main.a58fa56f.css",
-    "static/js/main.82688158.js"
+    "static/js/main.a2332c2a.js"
   ]
 }
