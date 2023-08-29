@@ -1,16 +1,19 @@
 import BackDropImage from "../components/BackDropImage";
 import DropImage from "../assets/images/BackDropImage2.jpg";
+import { useContext } from "react";
+import RefContext from "../context/RefContext";
 
 export default function AboutMe() {
+  const ref = useContext(RefContext);
   return (
-    <div id="aboutme" className="bg-primary-100">
+    <div ref={ref.aboutRef} className="bg-primary-100">
       <div className="w-[80%] m-auto py-12 flex flex-col md:flex-row justify-center items-center">
         <BackDropImage
           image={DropImage}
           imageAlt="Black and silver laptop computer on table"
         />
         <article className="md:ml-8 mt-6 w-[50%]">
-          <h1 className="text-5xl mb-4">Hej</h1>
+          <h1 className="text-5xl mb-4">Who am I?</h1>
           <p>
             Punctual, friendly, helpful, perfectionist, technically inclined,
             and quick learner. Is words my former colleagues described me as.

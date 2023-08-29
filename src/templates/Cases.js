@@ -3,14 +3,21 @@ import SectionHeading from "../components/SectionHeading";
 import casesData from "../data/CasesData";
 import { useEffect, useState } from "react";
 import Case from "../components/Case";
+import { useContext } from "react";
+import RefContext from "../context/RefContext";
 
 export default function Cases() {
+  const ref = useContext(RefContext);
+
   const [data, setData] = useState();
   useEffect(() => {
     setData(casesData.data);
   }, []);
   return (
-    <div id="cases" className="pb-12 w-[80%] m-auto flex flex-col text-center">
+    <div
+      ref={ref.casesRef}
+      className="pb-12 w-[80%] m-auto flex flex-col text-center"
+    >
       <SectionHeading text="My Case Studies" heading="Cases" />
       <div>
         {data &&

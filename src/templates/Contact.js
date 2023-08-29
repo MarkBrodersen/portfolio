@@ -2,8 +2,12 @@ import { useRef, useState } from "react";
 import ContactInfo from "../components/ContactInfo";
 import FillerText from "../components/sub-components/FillerText";
 import emailjs from "@emailjs/browser";
+import { useContext } from "react";
+import RefContext from "../context/RefContext";
 
 export default function Contact() {
+  const ref = useContext(RefContext);
+
   const [handler, setHandler] = useState(null);
 
   const form = useRef();
@@ -32,7 +36,7 @@ export default function Contact() {
 
   return (
     <>
-      <footer id="contactme" className="bg-primary-100 pt-12">
+      <footer ref={ref.contactRef} className="bg-primary-100 pt-12">
         <div className="flex flex-col items-center sm:flex-row w-[80%] m-auto">
           <article className="w-1/2">
             <div className="p-4 sm:w-64">

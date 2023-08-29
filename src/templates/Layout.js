@@ -7,7 +7,7 @@ import Cases from "./Cases";
 export default function Layout() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <main>
         <Hero />
         <AboutMe />
