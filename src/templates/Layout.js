@@ -12,7 +12,7 @@ export default function Layout() {
         <Hero />
         <AboutMe />
         <Services />
-        {/* <Cases /> */}
+        <Cases />
       </main>
       <Contact />
     </>
